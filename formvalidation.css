@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607680;
+    min-height: 100vh;
+    margin: 0;
+}
+.container{
+    background-color: white;
+    width: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.header{
+    background-color:#f7f7f7 ;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.header h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 0px;
+
+}
+.form{
+    padding: 30px 40px;
+}
+.filed{
+
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.filed label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.filed input:not(.terms){
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 10px;
+    font-size: 15px;
+}
+.filed i{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+    font-size: 20px;
+    visibility:hidden;
+}
+.filed small{
+    position: absolute;
+    left:0px;
+    bottom: 0px;
+    visibility: hidden;
+}
+.container .button{
+    width: 100%;
+    background-color: rgb(92, 92, 225);
+    border: 2px solid rgb(92, 92, 225); ;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+
+.filed.success input{
+    border-color: green;
+
+}
+.filed.error input{
+    border-color: red;
+}
+.filed.success i.success{
+    color:green;
+    visibility: visible;
+}
+.filed.error i.error{
+    color:red;
+    visibility: visible;
+}
+
+.filed.error i.success{
+    visibility: none;
+}
+.filed.success i.error{
+    visibility: none;
+}
+.filed.error small{
+    visibility: visible;
+    color: #e74c3c;
+}
