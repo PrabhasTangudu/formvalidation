@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="formvalidation.css">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Register Here</h2>
+        </div>
+        <form action="" class="form" id="form">
+            <div class="filed">
+                <label>Username:</label>
+                <input type="text" placeholder="xyz" id="uname">
+                
+                <i class='bx bxs-check-circle success'></i>
+                <i class='bx bxs-error error' ></i>
+                
+                <small>Error Message</small>
+             </div>
+             <div class="filed">
+                <label>Email:</label>
+                <input type="email" placeholder="abc@gamil.com" id="email">
+                
+                <i class='bx bxs-check-circle success'></i>
+                <i class='bx bxs-error error' ></i>
+                <small>Error Message</small>
+             </div>
+             <div class="filed">
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" id="password">
+                
+                <i class='bx bxs-check-circle success '></i>
+                <i class='bx bxs-error error' ></i>
+                <small>Error Message</small>
+             </div>
+             <div class="filed">
+                <label>Confrom Password:</label>
+                <input type="password" placeholder="Conform password" id="cpassword">
+
+                <i class='bx bxs-check-circle success'></i>
+                <i class='bx bxs-error error' ></i>
+                <small>Error Message</small>
+             </div>
+             <div class="filed">
+                <input type="checkbox"  id="ch" class="terms">
+                <label>I am agreed to above  and terms conditions</label>
+                
+                
+                <small>Error Message</small>
+             </div>
+             <input type="submit" value="Submit" class="button">
+             
+        </form>
+    </div>
+    <script src="formvalidation.js"></script>
+</body>
+</html>
